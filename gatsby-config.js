@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    siteUrl: `https://www.example.com`,
+    siteUrl: `https://www.lalithkishore.co`,
   },
   plugins: [
     {
@@ -49,12 +49,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-          fonts: [
-            `montserrat`,
-            `opensans`
-          ],
-        display: 'swap'
-      }
+        fonts: [`montserrat`, `opensans`],
+        display: "swap",
+      },
     },
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
@@ -62,4 +59,4 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
-}
+};
