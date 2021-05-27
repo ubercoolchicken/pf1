@@ -1,0 +1,75 @@
+//Typography
+$font-head1: dm serif display, sans-serif;
+$font-head2: montserrat, sans-serif;
+$font-body: opensans, sans-serif;
+
+//Color Space
+$black1: #000000;
+$black2: #0a0700;
+$black3: #333333;
+
+$white1: #ffffff;
+$white2: #eeeeef;
+
+$blue1: #076aff;
+$blue2: #2d64d1;
+$blue3: #5498ff;
+
+h1 {
+  font: 100% $font-head1;
+  color: #333333;
+}
+
+h2 {
+  font: 4rem $font-head2;
+  color: $black3;
+}
+
+p {
+  font: 100% $font-body;
+  color: $black3;
+}
+
+button {
+  background-color: $black2;
+  border: 2px solid $white1;
+  color: $white1;
+  width: 40%;
+  padding: 18px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  position: relative;
+  &:hover {
+    background: darken($black3, 25%);
+    transition: all 0.2s ease-in;
+  }
+  &:active {
+    background-color: $white2;
+    border: 2px solid $black1;
+    color: $black1;
+  }
+}
+
+.arrow-right.icon {
+  color: $white2;
+  position: absolute;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 86px;
+  height: 2px;
+  background-color: currentColor;
+}
+
+.arrow-right.icon:before {
+  content: "";
+  position: absolute;
+  right: 2px;
+  top: -7px;
+  width: 16px;
+  height: 16px;
+  border-top: solid 2px currentColor;
+  border-right: solid 2px currentColor;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
